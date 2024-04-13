@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light background color */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #ffd9e6; /* Light pink background color */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 8vh; /* Increased font size */
+            margin-bottom: 20px;
+        }
+        p {
+            font-weight: bold;
+            font-size: 4vh; /* Increased font size */
+            margin-bottom: 10px;
+        }
+        .text-highlight {
+            color: #ff6347; /* Custom text color */
+        }
+        .sentiment-highlight {
+            color: #006400; /* Custom text color */
+        }
+        a {
+            color: #007bff; /* Link color */
+            text-decoration: none;
+            display: block;
+            margin-top: 5vh;
+            font-size: 3vh; /* Increased font size */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Result</h1>
+        <p>Text: <span class="text-highlight">{{ text }}</span></p>
+        <p>Sentiment: <span class="sentiment-highlight">{{ sentiment }}</span></p>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
